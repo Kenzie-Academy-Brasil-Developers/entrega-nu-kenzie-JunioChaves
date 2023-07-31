@@ -1,0 +1,12 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 19.625rem;
+    height: 6rem;
+    flex-shrink: 0;
+
+    .valor{
+        display: flex;
+        justify-content: space-between;
+    }    
+}

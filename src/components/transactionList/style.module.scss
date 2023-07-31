@@ -1,0 +1,29 @@
+.container{
+    display: flex;
+    margin: 51px 0 0 20px;
+    .ul{
+        display: flex;
+        flex-direction: column;
+        width: 35rem;
+        height: 5.4375rem;
+        flex-shrink: 0;
+        list-style: none;
+        gap: 0.625rem;
+    }
+    
+    @media (max-width: 768px) {
+        ul {
+            padding: 0;
+        }
+        
+        li {
+            flex-direction: column;
+            text-align: center;
+        }
+    
+        li button {
+            margin-top: 0.625rem;
+            margin-left: 0;
+        }
+    }
+}

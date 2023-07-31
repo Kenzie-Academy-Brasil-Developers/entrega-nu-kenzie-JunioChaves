@@ -1,0 +1,24 @@
+main{
+    display: flex;
+    justify-content: space-between;
+    gap: 0.25rem;
+    margin: 0 10rem 0 10rem;
+    padding: clamp(.75rem, 2vw ,1.2rem) 0;
+
+}
+
+.container {
+    display: flex;
+    width: 64.75rem;
+    height: 33.9375rem;
+    padding: 0rem 6.1875rem 0rem 6.25rem;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.25rem;
+    flex-shrink: 0;
+}
+
+.containerMobile {
+    width: 75rem;
+    height: 241.4375rem;
+}

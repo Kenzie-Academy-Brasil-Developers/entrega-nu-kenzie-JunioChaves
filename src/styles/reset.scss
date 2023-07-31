@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul, ol{
+    list-style: none;
+}
+
+button{
+    cursor: pointer;
+    background: transparent;
+    border: none;
+}
+
+input{
+    background: transparent;
+    border: none;
+    border-radius: 0;
+}
