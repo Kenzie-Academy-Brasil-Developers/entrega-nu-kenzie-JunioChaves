@@ -1,7 +1,7 @@
-import React from 'react';
-import TransactionItem from '../transactionItem/TransactionItens';
-import style from './style.module.scss'
-import '../../styles/typography.scss'
+import React from "react";
+import TransactionItem from "../transactionItem/TransactionItens";
+import style from "./style.module.scss";
+import "../../styles/typography.scss";
 
 const TransactionList = ({ transactions, onDeleteTransaction }) => {
   return (
@@ -10,11 +10,15 @@ const TransactionList = ({ transactions, onDeleteTransaction }) => {
         <ul className={style.ul}>
           <p>Resumo financeiro</p>
           {transactions.map((transaction) => (
-            <TransactionItem key={transaction.id} transaction={transaction} onDelete={onDeleteTransaction} />
+            <TransactionItem
+              key={transaction.id}
+              transaction={transaction}
+              onDelete={onDeleteTransaction}
+            />
           ))}
         </ul>
       ) : (
-        <p className='titulo3'>Nenhuma transação encontrada.</p>
+        <p className="titulo3">Nenhuma transação encontrada.</p>
       )}
     </div>
   );

@@ -1,12 +1,17 @@
-.container{
+.container {
     display: flex;
     flex-direction: column;
     width: 19.625rem;
     height: 6rem;
     flex-shrink: 0;
+    margin: 10px 10px;
 
-    .valor{
+    .valor {
         display: flex;
         justify-content: space-between;
-    }    
+    }
+
+    div {
+        font-weight: bold;
+    }
 }

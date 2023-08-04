@@ -1,21 +1,37 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-ul, ol{
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f7f7f7;
+}
+
+ul,
+ol {
     list-style: none;
 }
 
-button{
+button {
     cursor: pointer;
     background: transparent;
     border: none;
 }
 
-input{
-    background: transparent;
-    border: none;
-    border-radius: 0;
+
+input,
+select {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+
+select {
+    width: 100%;
 }

@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
-import TransactionForm from './components/transactionForm/TransactioFrom';
-import TransactionList from './components/transactionList/TransactionList';
-import {Header} from './components/header/Header';
-import TransactionValue from './components/transactionValue/TransactionValue';
-import './styles/App.css'
-import './styles/grid.scss'
-import './styles/global.scss'
+import React, { useState } from "react";
+import TransactionForm from "./components/transactionForm/TransactioFrom";
+import TransactionList from "./components/transactionList/TransactionList";
+import { Header } from "./components/header/Header";
+import TransactionValue from "./components/transactionValue/TransactionValue";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.min.css";
+import "./styles/index.scss";
 
 const App = () => {
   const [transactions, setTransactions] = useState([]);
@@ -19,12 +19,16 @@ const App = () => {
   };
 
   const deleteTransaction = (id) => {
-    const updatedTransactions = transactions.filter((transaction) => transaction.id !== id);
+    const updatedTransactions = transactions.filter(
+      (transaction) => transaction.id !== id
+    );
     setTransactions(updatedTransactions);
   };
 
   const total = transactions.reduce((acc, transaction) => {
-    return transaction.type === 'income' ? acc + transaction.amount : acc - transaction.amount;
+    return transaction.type === "Despesa"
+      ? acc + transaction.amount
+      : acc - transaction.amount;
   }, 0);
   return (
     <>
@@ -39,10 +43,11 @@ const App = () => {
             transactions={transactions}
             onDeleteTransaction={deleteTransaction}
           />
+          <ToastContainer />
         </div>
       </main>
     </>
   );
 };
 
-export default App
+export default App;

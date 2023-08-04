@@ -1,14 +1,14 @@
-.container{
+.container {
     display: flex;
     width: 22.1875rem;
     height: 27.125rem;
     flex-direction: column;
     align-items: center;
     flex-shrink: 0;
-    padding: 3rem;
-    background: var( --colo-grey-1);
+    padding: 2rem;
+    background: var(--colo-grey-1);
     border: 1px solid rgba(0, 0, 0, 0.20);
-    
+
     margin: 51px 0 1px 0;
 
     .button {
@@ -29,7 +29,7 @@
         flex-shrink: 0;
     }
 
-    .span{
+    .span {
         margin-top: .28px;
         color: var(--colo-grey-3);
         font-family: Inter;
@@ -38,8 +38,8 @@
         font-weight: 400;
         line-height: 1.25rem;
     }
-    
-    .input{
+
+    .input {
         display: flex;
         width: 19.625rem;
         height: 3rem;
@@ -50,8 +50,17 @@
 
         background: var(--color-grey-2);
     }
-    
-    .select{
+
+    input[type=number]::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+    }
+
+
+    label {
+        margin-bottom: 10px;
+    }
+
+    .select {
         display: flex;
         width: 19.5625rem;
         height: 3rem;
@@ -64,4 +73,6 @@
         background: var(--color-grey-2);
     }
 }
+
+
 

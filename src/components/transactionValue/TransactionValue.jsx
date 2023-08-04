@@ -1,15 +1,15 @@
-import React from 'react';
-import style from './style.module.scss'
-import '../../styles/typography.scss'
+import React from "react";
+import style from "./style.module.scss";
+import "../../styles/typography.scss";
 
-const TransactionValue = ({total}) => {
+const TransactionValue = ({ total }) => {
   return (
     <div className={style.container}>
       <div className={style.valor}>
         <p>Valor total:</p>
         <div>
           <p className="titulo3">
-            {total >= 0 ? `R$ ${total}` : `- R$ ${Math.abs(total)}`}
+            {total >= 0 ? `R$ ${total}` : `R$ ${Math.abs(total)}`}
           </p>
         </div>
       </div>
@@ -20,6 +20,4 @@ const TransactionValue = ({total}) => {
   );
 };
 
-export default TransactionValue
-
-
+export default TransactionValue;
